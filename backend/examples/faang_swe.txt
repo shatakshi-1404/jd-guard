@@ -1,0 +1,11 @@
+Software Engineer II
+
+You will work with our backend team building distributed systems in Java and Go. Reports to the Engineering Manager, team of 8.
+
+Requirements:
+- 2-4 years of experience in backend development
+- Experience with distributed systems
+
+Compensation: $140,000 - $180,000 base + equity + benefits.
+Hybrid - 3 days in office (Bangalore).
+Our interview process: phone screen, technical round, system design, team match.

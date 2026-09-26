@@ -1,0 +1,118 @@
+{
+  "rules": [
+    {
+      "id": "COMP_001",
+      "category": "Compensation Ambiguity",
+      "severity": "medium",
+      "phrases": ["competitive salary", "competitive compensation", "competitive pay"],
+      "explanation": "No concrete salary range is provided — 'competitive' is undefined and varies widely by company."
+    },
+    {
+      "id": "COMP_002",
+      "category": "Compensation Ambiguity",
+      "severity": "low",
+      "phrases": ["based on experience", "commensurate with experience", "negotiable"],
+      "explanation": "Salary is left open-ended with no reference point given upfront."
+    },
+    {
+      "id": "COMP_003",
+      "category": "Compensation Ambiguity",
+      "severity": "positive",
+      "phrases": [],
+      "explanation": "A specific salary range or number is mentioned in the JD.",
+      "detector": "salary_regex"
+    },
+    {
+      "id": "LANG_001",
+      "category": "Vague Culture Language",
+      "severity": "low",
+      "phrases": ["rockstar", "ninja", "guru", "superhero", "wizard"],
+      "explanation": "Buzzword often used instead of describing specific required skills."
+    },
+    {
+      "id": "LANG_002",
+      "category": "Vague Culture Language",
+      "severity": "medium",
+      "phrases": ["wear many hats", "jack of all trades", "hit the ground running"],
+      "explanation": "May signal undefined role boundaries or expectation of immediate full productivity with no ramp-up."
+    },
+    {
+      "id": "SCOPE_001",
+      "category": "Scope Ambiguity",
+      "severity": "high",
+      "phrases": ["do whatever it takes", "no task too small", "other duties as assigned"],
+      "explanation": "Open-ended responsibility clause — scope of the role is not actually bounded."
+    },
+    {
+      "id": "SCOPE_002",
+      "category": "Scope Ambiguity",
+      "severity": "medium",
+      "phrases": ["fast-paced environment", "wear multiple hats", "startup mentality"],
+      "explanation": "Common phrasing around high workload without concrete detail on hours or team size."
+    },
+    {
+      "id": "HOURS_001",
+      "category": "Unpaid Overtime Signal",
+      "severity": "high",
+      "phrases": ["must be available whenever needed", "always on", "24/7 availability", "willing to go above and beyond"],
+      "explanation": "Suggests open-ended availability expectations without stating working hours or overtime pay."
+    },
+    {
+      "id": "HOURS_002",
+      "category": "Unpaid Overtime Signal",
+      "severity": "medium",
+      "phrases": ["work hard play hard", "passionate about going the extra mile"],
+      "explanation": "Common euphemism associated with unstructured or extended working hours."
+    },
+    {
+      "id": "SENIOR_001",
+      "category": "Seniority Mismatch",
+      "severity": "medium",
+      "phrases": [],
+      "explanation": "Years of experience required seems high relative to job title (e.g. 5+ years for an 'entry-level' or unspecified-level role).",
+      "detector": "seniority_mismatch"
+    },
+    {
+      "id": "CLARITY_001",
+      "category": "Positive Signal",
+      "severity": "positive",
+      "phrases": ["tech stack", "you will work with", "reports to", "team of"],
+      "explanation": "JD gives concrete detail about tools, team structure, or reporting line."
+    },
+    {
+      "id": "CLARITY_002",
+      "category": "Positive Signal",
+      "severity": "positive",
+      "phrases": ["interview process", "hiring process", "stages of interview"],
+      "explanation": "JD is transparent about what the interview process looks like."
+    },
+    {
+      "id": "CLARITY_003",
+      "category": "Positive Signal",
+      "severity": "positive",
+      "phrases": ["remote", "hybrid", "work from home", "office-based"],
+      "explanation": "Work location/arrangement is clearly stated."
+    },
+    {
+      "id": "VAGUE_001",
+      "category": "Vague Requirements",
+      "severity": "medium",
+      "phrases": ["strong communication skills", "excellent problem-solving skills", "team player"],
+      "explanation": "Generic soft-skill phrasing with no way to objectively evaluate it — often filler."
+    },
+    {
+      "id": "URGENCY_001",
+      "category": "Pressure Tactics",
+      "severity": "medium",
+      "phrases": ["immediate joiner only", "urgent hiring", "join immediately"],
+      "explanation": "Pressure language can indicate high turnover or poor planning, though not always."
+    },
+    {
+      "id": "BENEFITS_001",
+      "category": "Benefits Ambiguity",
+      "severity": "low",
+      "phrases": ["great benefits", "amazing perks", "best-in-class benefits"],
+      "explanation": "Benefits are claimed but not itemized."
+    }
+  ]
+}
