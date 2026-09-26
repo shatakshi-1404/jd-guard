@@ -7,7 +7,7 @@ app = FastAPI(title="JDGuard API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # tighten this to your frontend URL before deploying
+    allow_origins=["https://jd-guard.vercel.app/"],  # tighten this to your frontend URL before deploying
     allow_methods=["*"],
     allow_headers=["*"],
 )
